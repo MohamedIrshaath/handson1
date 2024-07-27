@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: hsl(0, 0%, 100%); /* Change background to white */
+    color: hsl(224, 30%, 27%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .attribution {
+    font-size: 11px;
+    color: hsl(224, 30%, 27%);
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+  
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  
+  /* Flex Container */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 375px;
+  }
+  
+  @media (min-width: 1440px) {
+    .main-container {
+      flex-direction: row; /* Arrange items side by side */
+      justify-content: space-between;
+      max-width: 1000px; /* Increase the width for desktop view */
+    }
+  
+    .container, .summary-container {
+      max-width: 48%;
+      margin-bottom: 0; /* Remove bottom margin */
+    }
+  }
+  
+  /* Container Styles */
+  .container, .summary-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%)); /* Gradient background */
+    color: hsl(0, 0%, 100%); /* Text color inside container */
+  }
+  
+  .summary-container {
+    background: hsl(0, 0%, 100%); /* White background for bottom part */
+    color: hsl(224, 30%, 27%); /* Text color inside summary */
+  }
+  
+  /* Typography */
+  h1 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .result {
+    font-size: 48px;
+    font-weight: 800;
+    color: hsl(234, 85%, 45%);
+  }
+  
+  .score {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .summary {
+    margin-bottom: 20px;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .summary-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .summary-item span {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .summary-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  /* Colors for summary items */
+  .reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1);
+  }
+  
+  .memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+  }
+  
+  .verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+  }
+  
+  .visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
+  }
+  
+  /* Button Styles */
+  button {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border: none;
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  button:active {
+    background: hsl(0, 0%, 50%); /* Change background to grey on active state */
+    transform: scale(0.95);
+  }
+  
